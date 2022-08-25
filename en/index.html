@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head> 
+        <link rel="icon" href="../img/favicon.png" />
+        <title> Arviixzuh </title> <!--&#8211;-->
+        <link href="../css/aos.css" rel="stylesheet"><!--https://unpkg.com/aos@2.3.1/dist/aos.css-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <script src="../js/jquery.js"></script> <!--https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js-->
+        <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/scroll.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="stylesheet" href="../css/redes.css">
+        <link rel="stylesheet" href="../css/tarjetas.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <script src="../js/smooth.js"></script>
+        <script src="../js/scroll-up.js"></script>
+        <meta name="description" content="Arviixzuh"/>
+        <meta name="author" content="Arviixzuh"/>
+        <meta name="keywords" content="Arviixzuh"/>
+        <meta name="MobileOptimized" content="width">
+        <meta charset="uft-8"/>
+        
+        <meta name="og:locale" content="en_EN">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Arviixzuh">
+        <meta property="og:url" content="https://arviixzuh.github.io">
+        <meta property="og:title" content="Arviixzuh - Dashboard">
+        <meta property="og:description" content="Welcome to my portfolio">
+        <meta property="og:image" content="img/arviixzuh2.webp">
+        <meta property="og:image:alt" content="Arviixzuh">
+        <meta name="theme-color" content="#835aa2">
+    </head>
+    <body>
+
+<header>
+
+        <img src="../img/en.png" class="es-burger" onclick="window.location.href='../index.html';">
+
+        <label for="contenedor-botones" class="nav__label" id="top">
+
+            <div id="barra" class="burger">
+                <i id="barra2" class="fa fa-bars"></i>
+            </div>
+
+            <script>
+                const times= 'fa-times';
+                const bars= 'fa-bars'
+    
+                function animar1 (){
+    
+                    if (document.getElementById("barra2").classList.contains(bars)) {
+      
+                        document.getElementById("barra2").classList.remove(bars)
+                        document.getElementById("barra2").classList.add(times)
+                    } else {
+                        document.getElementById("barra2").classList.remove(times)
+                        document.getElementById("barra2").classList.add(bars)
+                    }
+                }
+    
+                document.getElementById("barra").onclick = function (){
+                    animar1()
+                }
+              </script>
+             
+        </label>
+    
+    <nav> 
+        <input type="checkbox" id="contenedor-botones" class="nav__input" style="display:none">
+        <ul>
+            <div class="contenedor-botones">
+                <a href="#projects" class="boton uno"><span>Projects</span></a>
+                <a href="#skills" class="boton uno"><span>Skills</span></a>
+                <a href="#contact" class="boton uno"><span>Contact</span></a>
+                <img src="../img/en.png" class="es" onclick="window.location.href='../index.html';">
+            </div>
+        </ul>
+    </nav>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav ul");
+            header.classList.toggle("abajo",window.scrollY>0);
+        })
+    </script>
+
+</header>
+
+<div class="inicio">
+    <a href="index.html"><img src="../img/arviixzuh.png" class="arviixzuh"></a> 
+    <h1 data-aos="fade-down">Welcome to my portfolio</h1>
+    
+    <p class="bio">My name is Victor, I am 16 years old, I live in Venezuela and I currently plan to study systems engineering (the path of stress according to many)</p> 
+    
+     <div class="redes" >
+        <a href="https://discord.gg/U8APdjGQNq" target="_blank" class="fab fa-discord"></a>
+        <a href="https://twitter.com/Arviixzuh_" target="_blank" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/arviixzuh/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.youtube.com/channel/UCSAafU0GMeeVK_wcmyrWAMg" target="_blank" class="fab fa-youtube"></a>
+        <a href="https://github.com/Arviixzuh" target="_blank" class="fab fa-github"></a>
+     </div>
+
+     <div class="bajar">
+        <a href="#proyectos" class="fa fa-chevron-down"></a>
+    </div>
+
+</div>
+
+<section id="projects" class="proyectos">
+    <article>
+        
+        <h2 data-aos="fade-down">Projects</h2>
+        <p class="bio" data-aos="fade-down">Here are some of my most outstanding projects. All my projects are made with a lot ❤️</p>
+
+        <div class="contenedor-tarjetas" data-aos="fade-down">
+            <div class="tarjetas">
+                <figure>
+                    <a href="https://discord.com/oauth2/authorize?client_id=908862622672236635&scope=bot&permissions=8" target="_blank"> <img src="../img/favicon.png" class="gunter"> </a>
+                </figure>
+                <div class="contenido">
+                    <h3>Gunter</h3>
+                    <p>It is a multifunctional bot for Discord, which will be your right hand on the server...</p>
+                    <a href="https://github.com/Arviixzuh/Gunter" target="_blank">Read more...</a>
+                </div>
+            </div>
+        </div>
+            
+    </article>
+</section>
+
+<section id="skills" class="habilidades">
+    <article>
+        
+        <h2 data-aos="fade-down">Skills</h2>
+        <p class="bio" data-aos="fade-down">I am a person who likes to learn new things and every day I am polishing my skills even more.</p>
+
+        <div class="contenedor-tarjetas-habilidades" data-aos="fade-down">
+            <div class="tarjetas-habilidades">
+                
+                <figure>
+                    <img src="../img/javascript.png" class="habilidades-img">
+                    <img src="../img/java.png" class="habilidades-img">
+                    <img src="../img/python.png" class="habilidades-img">
+                    <img src="../img/html.png" class="habilidades-img">
+                    <img src="../img/css.png" class="habilidades-img">
+                    <img src="../img/discord.js.png" class="habilidades-img">
+                </figure>
+                
+            </div>
+        </div>
+                
+    </article>
+</section>
+
+<section id="contact" class="contacto">
+    <article class="contacto__articulo">
+    <h2 class="contact__title" data-aos="fade-down">Contact</h2>
+    <div class="contact__right-side" data-aos="fade-down">
+        <form action="https://formsubmit.co/arviixzuh@gmail.com" method="post" class="contact__form-wrapper">
+            <div class="contact__input-line">
+                <label for="name" class="contact__label">Name</label>
+                <input type="text" name="name" id="name" class="contact__input" required>
+            </div>
+            <div class="contact__input-line">
+                <label for="email" class="contact__label">Email</label>
+                <input type="email" name="email" id="email" class="contact__input" required>
+            </div>
+            <div class="contact__input-line">
+                <label for="message" class="contact__label">Message</label required>
+                <textarea type="text" name="message" id="message" class="contact__input--textarea" required></textarea>
+            </div>
+            <input type="submit" value="Send" class="contact__submit-button">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/en/contact.html">
+        </form>
+    </div>
+    </article>
+</section>
+
+    <footer>
+        <p class="abajo"> © 2022 Arviixzuh </p>
+    </footer>
+
+    <div class="scroll up" style="display: none">
+        <a href="#top" class="fa fa-chevron-up"></a>
+    </div> 
+
+    <script src="../js/aos.js"></script> <!--https://unpkg.com/aos@2.3.1/dist/aos.js-->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
+
+<!-- Hecho por Arviixzuh -->
