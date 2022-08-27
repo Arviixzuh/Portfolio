@@ -5,19 +5,20 @@
     outline: 0;
 }
 
-section {
-    background-color:  rgba(9, 7, 24, 0.57);
-}
-
 html {
     background-color:  rgb(15, 15, 15);
 }
 
+section {
+    background-color:  rgb(22, 20, 30);
+    min-height: 100vh;
+}
+
 .arviixzuh {
-    margin-top: 75px;
-    width: 200px;
+    margin-top: 90px;
+    width: 170px;
     user-select: none;
-    height: 200px;
+    height: 170px;
     cursor: pointer;
     border-radius: 50%;
     transition: all .6s ease-in-out;
@@ -30,7 +31,7 @@ html {
 .inicio {
     text-align: center;
     z-index: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll; /*https://images.hdqwalls.com/download/firewatch-sun-trees-mountains-birds-lake-evening-x8-2560x1080.jpg*/
+    background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll; /*https://images.hdqwalls.com/download/firewatch-sun-trees-mountains-birds-lake-evening-x8-2560x1080.jpg*/
     background-size: cover;
     min-height: 100vh;
 }
@@ -41,17 +42,11 @@ html {
     }
 }
 
-.habilidades {
-    background-color: rgb(20, 30, 39);
-}
 
 body {
     width: 100%;
     font-family: "Poppins";
-    background-size: 1000px;
-    background-position: center center;
-    background-color: #272727;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23212023' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  
 }
 
 .bio {
@@ -99,7 +94,7 @@ section article {
 
 footer {
     text-align: center;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(10, 10, 10);
     color: rgb(240, 221, 137);
     width: 100%;
     padding-top: 40px;
