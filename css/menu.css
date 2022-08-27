@@ -2,6 +2,7 @@ ul {
     position: fixed;
     z-index: 1;
     width: 100%;
+    padding: 5px;
     list-style-type: none;
     text-align: center;
     transition: .4s ease all;
@@ -13,7 +14,7 @@ section article {
 }
 
 ul.abajo {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(10, 10, 10);
 }
 
 nav a {
@@ -244,6 +245,7 @@ nav a {
     ul {
         transform: translateX(-200vw);
         margin-top: 80px;
+        padding: 0;
         position: absolute;
     }
 
