@@ -2,7 +2,7 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background-color: #19171d;
+
 }
 
 .contacto__articulo {
@@ -14,7 +14,7 @@
 }
 
 .gracias {
-    min-height: 100vh;
+    min-height: 83vh;
 }
 
 .suse {
