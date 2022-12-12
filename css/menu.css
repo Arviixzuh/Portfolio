@@ -25,7 +25,7 @@ nav a {
 }
 
 .contenedor-botones {
-    width:auto;
+    width: auto;
     display: inline-flex;
     gap: 10px;
 }
@@ -38,7 +38,7 @@ nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width:auto;
+    width: auto;
     height: 40px;
     color: #ffff;
     font-size: 20px;
@@ -57,10 +57,10 @@ nav a {
 }
 
 .boton.uno::after {
-	content: "";
-	width: 100%;
-	height: 100%;
-	background:rgba(0, 0, 0, 0.140);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.140);
     position: absolute;
     z-index: 1;
     top: -100px;
@@ -151,6 +151,7 @@ nav a {
     .es-burger {
         display: block;
     }
+
     .es {
         display: none;
     }
@@ -158,13 +159,34 @@ nav a {
     .en-burger {
         display: block;
     }
+
     .en {
         display: none;
     }
 
 }
 
-/*------[ BANDERAS ]------*/
+.fa.fa-play, .fa.fa-pause {
+    z-index: 1;
+    margin: 20px;
+    font-size: 22px;
+    width: 20px;
+    background: transparent;
+    height: 20px;
+    padding-top: 8px;
+    padding-block-end: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffff;
+    text-align: left;
+    transition: .3s ease all;
+}
+
+.fa.fa-play:active, .fa.fa-pause:active {
+    transform: translateY(-5px);
+}
 
 /*------[ HAMBURGER-ICON's ]------*/
 
@@ -220,7 +242,7 @@ nav a {
     transform: translateY(-5px);
 }
 
-.nav__input:checked + ul {
+.nav__input:checked+ul {
     text-align: center;
     justify-content: center;
     z-index: 1;
@@ -252,10 +274,11 @@ nav a {
     .boton {
         display: block;
     }
+
     .burger {
         display: block;
     }
-    
+
     .fa.fa-bars {
         display: block;
         position: absolute;
@@ -266,12 +289,12 @@ nav a {
         position: absolute;
     }
 
-    .scroll.up .fa-chevron-up{
+    .scroll.up .fa-chevron-up {
         display: none
     }
 
     section article {
         padding: 30px;
     }
-    
+
 }
