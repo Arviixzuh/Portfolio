@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
@@ -6,11 +6,10 @@
 }
 
 html {
-    background-color:  rgb(15, 15, 15);
+    background-color: rgb(22, 20, 30);
 }
 
 section {
-    background-color:  rgb(22, 20, 30);
     min-height: 100vh;
 }
 
@@ -31,7 +30,8 @@ section {
 .inicio {
     text-align: center;
     z-index: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll; /*https://images.hdqwalls.com/download/firewatch-sun-trees-mountains-birds-lake-evening-x8-2560x1080.jpg*/
+    background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll;
+    /*https://images.hdqwalls.com/download/firewatch-sun-trees-mountains-birds-lake-evening-x8-2560x1080.jpg*/
     background-size: cover;
     min-height: 100vh;
 }
@@ -46,7 +46,8 @@ section {
 body {
     width: 100%;
     font-family: "Poppins";
-  
+    background-color: rgba(0, 0, 0, 0.411);
+
 }
 
 .bio {
@@ -109,7 +110,7 @@ br {
 
 @media screen and (max-width: 600px) {
     .header {
-      height: 6em;
+        height: 6em;
     }
 
     h1 {
@@ -127,6 +128,7 @@ br {
         width: auto;
         font-size: 15px;
     }
+
     section {
         min-height: 100vh;
     }
