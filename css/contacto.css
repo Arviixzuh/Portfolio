@@ -1,4 +1,4 @@
-.contacto{
+.contacto {
     justify-content: center;
     align-items: center;
     color: #ffffff;
@@ -34,14 +34,14 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
-    transition: all .4s ease-in-out;  
+    transition: all .4s ease-in-out;
 }
 
 .volver:hover {
     background-color: #cacaca;
 }
 
-.contact__right-side{
+.contact__right-side {
     width: 20px;
     font-weight: 100;
     border-radius: 15px;
@@ -53,17 +53,18 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 15px ;
-    
+    padding: 15px;
+
 }
 
-.contact__title{
+.contact__title {
     font-weight: 100;
     text-align: center;
     padding-block-end: 15px;
 }
 
-.contact__form-wrapper, .contact__input-line{
+.contact__form-wrapper,
+.contact__input-line {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -71,18 +72,18 @@
     width: 100% auto;
 }
 
-.contact__input-line{
+.contact__input-line {
     margin-bottom: 45px;
     margin: 10px;
 }
 
-.contact__label{
+.contact__label {
     font-size: 18px;
     margin-block-end: 10px;
     font-weight: 600;
 }
 
-.contact__input{
+.contact__input {
     height: 30px;
     outline: none;
     font-size: 15px;
@@ -96,7 +97,7 @@
     background-color: rgb(35, 42, 53);
 }
 
-.contact__input--textarea{
+.contact__input--textarea {
     height: 100px;
     outline: none;
     font-size: 15px;
@@ -123,7 +124,7 @@
     border: none;
     font-size: 18px;
     cursor: pointer;
-    transition: all .4s ease-in-out;  
+    transition: all .4s ease-in-out;
 }
 
 .contact__submit-button:hover {
