@@ -13,15 +13,33 @@
 }
 
 .gracias {
-    min-height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .suse {
+    user-select: none;
     width: 200px;
     height: 200px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+
+.suse:hover {
+    transform: scale(1.05)
+}
+
+
+.boton__volver {
+    margin-top: 25px;
 }
 
 .volver {
+    user-select: none;
     padding: 18px 55px;
     background-color: #ffffff;
     border-radius: 50px;
@@ -49,11 +67,11 @@
     width: auto;
     margin: 1rem auto;
     background-color: rgba(0, 0, 0, 0.150);
+    backdrop-filter: blur(1px);
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     padding: 15px;
-
 }
 
 .contact__title {
