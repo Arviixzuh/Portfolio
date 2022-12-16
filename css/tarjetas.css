@@ -25,6 +25,7 @@
     margin: 5px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.150);
+    backdrop-filter: blur(1px);
     cursor: default;
     transition: all .4s ease-in-out;
 }
@@ -36,7 +37,6 @@
 .tarjetas-habilidades .habilidades-img {
     border-radius: 10%;
 }
-
 
 .contenedor-tarjetas,
 .contenedor-tarjetas-habilidades {
@@ -57,6 +57,7 @@
     border-radius: 6px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.150);
+    backdrop-filter: blur(1px);
     cursor: default;
     transition: all 400ms ease;
 }
