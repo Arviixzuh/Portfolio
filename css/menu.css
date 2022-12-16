@@ -146,7 +146,7 @@ nav a {
     transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .es-burger {
         display: block;
@@ -166,7 +166,8 @@ nav a {
 
 }
 
-.fa.fa-play, .fa.fa-pause {
+.fa.fa-play,
+.fa.fa-pause {
     z-index: 1;
     margin: 20px;
     font-size: 22px;
@@ -184,7 +185,8 @@ nav a {
     transition: .3s ease all;
 }
 
-.fa.fa-play:active, .fa.fa-pause:active {
+.fa.fa-play:active,
+.fa.fa-pause:active {
     transform: translateY(-5px);
 }
 
@@ -253,7 +255,7 @@ nav a {
 
 /*------[ HAMBURGER-ICON's ]------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .contenedor-botones {
         display: block;
