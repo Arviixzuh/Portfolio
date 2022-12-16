@@ -14,7 +14,8 @@ section article {
 }
 
 ul.abajo {
-    background-color: rgb(10, 10, 10);
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(15px);
 }
 
 nav a {
