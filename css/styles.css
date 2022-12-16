@@ -9,12 +9,8 @@ html {
     background-color: rgb(22, 20, 30);
 }
 
-section {
-    min-height: 100vh;
-}
-
 .arviixzuh {
-    margin-top: 90px;
+    margin-top: 80px;
     width: 170px;
     user-select: none;
     height: 170px;
@@ -28,6 +24,10 @@ section {
 }
 
 .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     z-index: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.788)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll;
@@ -42,17 +42,15 @@ section {
     }
 }
 
-
 body {
     width: 100%;
     font-family: "Poppins";
     background-color: rgba(0, 0, 0, 0.411);
-
 }
 
 .bio {
-    font-size: 20px;
-    max-width: 550px;
+    font-size: 16px;
+    max-width: 600px;
     border-radius: 10px;
     margin: 1rem auto;
     color: white;
@@ -61,7 +59,7 @@ body {
 
 h1 {
     font-weight: 100;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -108,7 +106,7 @@ br {
     user-select: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .header {
         height: 6em;
     }
@@ -125,11 +123,14 @@ br {
     }
 
     .bio {
-        width: auto;
+        width: 80%;
         font-size: 15px;
     }
 
-    section {
-        min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+    .bio {
+        width: auto;
     }
 }
