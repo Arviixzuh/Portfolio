@@ -1,6 +1,4 @@
 .contenedor-tarjetas-habilidades {
-
-
     padding: 10px;
     align-items: center;
     user-select: none;
@@ -17,7 +15,7 @@
     transition: all .4s ease-in-out;
 }
 
-.tarjetas-habilidades img{
+.tarjetas-habilidades img {
     width: 60px;
     height: 70px;
     align-items: center;
@@ -33,19 +31,19 @@
 
 .tarjetas-habilidades img:hover {
     transform: translateY(-5px);
-
 }
 
 .tarjetas-habilidades .habilidades-img {
     border-radius: 10%;
 }
 
-.contenedor-tarjetas {
+
+.contenedor-tarjetas,
+.contenedor-tarjetas-habilidades {
     width: auto;
-    display:inline-block;
+    display: inline-block;
     user-select: none;
     padding: 50px;
-    margin-top: -40px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -97,7 +95,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    
+
     .contenedor-tarjetas-habilidades {
         display: inline-block;
     }
@@ -105,5 +103,5 @@
     .contenedor-tarjetas {
         display: flex;
     }
-    
+
 }
