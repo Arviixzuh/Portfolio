@@ -1,12 +1,12 @@
-.scroll.up .fa-chevron-up{
+.scroll.up .fa-chevron-up {
     position: fixed;
     width: 50px;
     height: 50px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    color:#ffff;
-    background-color:rgb(202, 100, 96);
+    color: #ffff;
+    background-color: rgb(15, 20, 46);
     bottom: 40px;
     right: 50px;
     user-select: none;
@@ -40,16 +40,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 body::-webkit-scrollbar-track {
     position: none;
-    background: rgb(15, 15, 15)
+    background: rgb(10, 10, 10)
 }
 
-.bajar .fa-chevron-down{
+.bajar .fa-chevron-down {
     width: 50px;
     height: 50px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    color:#ffff;
+    color: #ffff;
     user-select: none;
     bottom: 40px;
     margin-top: -15px;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-track {
     text-align: center;
     line-height: 50px;
     font-size: 22px;
-    transition: all .4s ease-in-out;    
+    transition: all .4s ease-in-out;
 }
 
 .bajar .fa-chevron-down:hover {
