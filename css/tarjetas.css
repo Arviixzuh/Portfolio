@@ -95,7 +95,11 @@
     color: #ffff
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    
+    .tarjetas-habilidades img, .tarjetas, .contact__right-side {
+        backdrop-filter: blur(0);
+    }
 
     .contenedor-tarjetas-habilidades {
         display: inline-block;
