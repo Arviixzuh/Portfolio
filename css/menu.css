@@ -258,10 +258,6 @@ nav a {
 
 @media screen and (max-width: 800px) {
     
-    .tarjetas-habilidades img, .tarjetas, .contact__right-side {
-        backdrop-filter: blur(0);
-    }
-
     .contenedor-botones {
         display: block;
         background-color: rgba(15, 15, 15);
