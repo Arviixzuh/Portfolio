@@ -107,6 +107,11 @@ br {
 }
 
 @media screen and (max-width: 800px) {
+    
+    .tarjetas-habilidades img, .tarjetas, .contact__right-side {
+        backdrop-filter: blur(0);
+    }
+    
     .header {
         height: 6em;
     }
