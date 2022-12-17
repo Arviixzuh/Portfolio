@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.texto__tarjeta {
+    font-size: 15px;
+}
+
 .gunter {
     align-items: center;
     justify-content: center;
@@ -96,8 +100,34 @@
 }
 
 @media screen and (max-width: 800px) {
-    
-    .tarjetas-habilidades img, .tarjetas, .contact__right-side {
+
+    .tarjetas .contenido a {
+        padding: 7px;
+
+    }
+
+    .tarjetas {
+        width: 170px;
+        height: auto;
+    }
+
+    .gunter {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tarjetas-habilidades img {
+        width: 40px;
+        height: 50px;
+    }
+
+    .texto__tarjeta {
+        font-size: 12px;
+    }
+
+    .tarjetas-habilidades img,
+    .tarjetas,
+    .contact__right-side {
         backdrop-filter: blur(0);
     }
 
