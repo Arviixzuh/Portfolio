@@ -257,7 +257,7 @@ nav a {
 /*------[ HAMBURGER-ICON's ]------*/
 
 @media screen and (max-width: 800px) {
-    
+
     .contenedor-botones {
         display: block;
         background-color: rgba(15, 15, 15);
