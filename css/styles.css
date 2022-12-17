@@ -107,25 +107,46 @@ br {
 }
 
 @media screen and (max-width: 800px) {
-    
+
+    .arviixzuh {
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .bajar {
+        display: none;
+    }
+
     .header {
         height: 6em;
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px
+    }
+
+    .abajo {
+        font-size: 18px
     }
 
     .inicio {
-        font-size: 15px;
+        font-size: 12px;
         margin: 0;
-        width: auto;
         padding: 18px;
     }
 
     .bio {
         width: 80%;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 }
