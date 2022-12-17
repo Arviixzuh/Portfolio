@@ -145,7 +145,7 @@ br {
     }
 
     .bio {
-        width: 100%;
+        width: 80%;
         font-size: 15px;
     }
 
@@ -155,4 +155,12 @@ br {
     .bio {
         width: auto;
     }
+}
+
+@media screen and (max-width: 380px) {
+    
+    .bio {
+        font-size: 12px;
+    }
+    
 }
