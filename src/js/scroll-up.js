@@ -11,5 +11,5 @@ $(document).ready(function () {
 
 window.addEventListener("scroll", function () {
     var header = document.querySelector("nav ul");
-    header.classList.toggle("abajo", window.scrollY > 0);
+    header.classList.toggle("abajo", window.scrollY > 30);
 })
