@@ -91,6 +91,13 @@ volverBtn.addEventListener("click", () => {
     navBarIdioma.classList.remove("open-idioma")
 })
 
+const preloader = document.querySelector(".preloader")
+window.addEventListener("load", () => {
+    preloader.style.opacity = '0'
+    setTimeout(() => {
+        preloader.style.display = 'none'
+    }, 3000)
+})
 
 /* Footer Animation (Redes) */
 ScrollReveal().reveal('.redes-1', { delay: 1200, origin: 'top', distance: '20px', reset: false });
