@@ -26,8 +26,18 @@ document.getElementById("play-piano").onclick = function () {
 /* Menu Hamburguesa (Iconos) */
 const burgerMenus = document.getElementById("menu-hamburguesa")
 const burgerIcon = document.getElementById("menu-hamburguesa-icon");
+const mainMenu = document.querySelector(".menu-main"); 
 
 burgerMenus.addEventListener("click", () => {
+
+    if(mainMenu.classList.contains('menu-main')) {
+        mainMenu.classList.remove('menu-main')
+        mainMenu.classList.add('menu-open');
+    } else {
+        mainMenu.classList.remove('menu-open');
+        mainMenu.classList.add('menu-main')
+    }
+    
     burgerIcon.classList.toggle("bx-x");
 });
 
@@ -126,3 +136,45 @@ ScrollReveal().reveal('.titulo-1', { delay: 300, origin: 'right', distance: '-20
 ScrollReveal().reveal('.titulo-2', { delay: 600, origin: 'right', distance: '-200px' });
 ScrollReveal().reveal('.descripcion-1', { delay: 900, origin: 'right', distance: '-200px' });
 ScrollReveal().reveal('.boton-inicial', { delay: 1200, origin: 'top', distance: '-200px' });
+
+const botonSection1 = document.getElementById("proyectosBtn");
+const botonSection2 = document.getElementById("habilidadesBtn");
+const botonSection3 = document.getElementById("contactoBtn");
+
+function sectionBtn() {
+    if(mainMenu.classList.contains('menu-main')) {
+        mainMenu.classList.remove('menu-main')
+        mainMenu.classList.add('menu-open');
+    } else {
+        mainMenu.classList.remove('menu-open');
+        mainMenu.classList.add('menu-main')
+    }
+    burgerIcon.classList.toggle("bx-x");
+}
+
+botonSection1.addEventListener("click", () => {
+    var ancho = window.innerWidth; 
+    if(ancho < 800) {
+        sectionBtn()
+    } else {
+        return;
+    }
+});
+
+botonSection2.addEventListener("click", () => {
+    var ancho = window.innerWidth; 
+    if(ancho < 800) {
+        sectionBtn()
+    } else {
+        return;
+    }
+});
+
+botonSection3.addEventListener("click", () => {
+    var ancho = window.innerWidth; 
+    if(ancho < 800) {
+        sectionBtn()
+    } else {
+        return;
+    }
+});
