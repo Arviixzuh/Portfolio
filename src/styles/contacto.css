@@ -1,0 +1,151 @@
+/* Contenedor del formulario */
+
+.contactContainer {
+    width: 310px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    backdrop-filter: blur(1px);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.150);
+    box-sizing: border-box;
+}
+
+.contact__label {
+    color: var(--contacto-bg)
+}
+
+.contactForm,
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100% auto;
+}
+
+.inputContainer {
+    margin-bottom: 45px;
+    margin: 10px;
+}
+
+/* Campos del formulario */
+
+.contactInput {
+    color: #ffffff;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 15px;
+    background-color: var(--contacto-input);
+}
+
+/* Campo del mensaje */
+
+.contactMessage {
+    color: #ffffff;
+    width: 250px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 15px;
+    background-color: var(--contacto-input);
+}
+
+/* Boton para enviar el formulario */
+
+.sendMessage {
+    color: #000000;
+    margin: 1rem auto;
+    border: none;
+    cursor: pointer;
+    padding: 18px 55px;
+    text-align: center;
+    font-size: 18px;
+    transition: all .4s ease-in-out;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.sendMessage:hover {
+    background-color: #cacaca;
+}
+
+/* Seccion para volver */
+
+.gracias {
+    display: flex;
+    text-align: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suse {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    user-select: none;
+}
+
+.suse:hover {
+    transform: scale(1.05);
+}
+
+.boton__volver {
+    margin-top: 25px;
+}
+
+.volver {
+    color: #000000;
+    width: 55px;
+    border: none;
+    padding: 18px 55px;
+    cursor: pointer;
+    margin: 1rem auto;
+    font-size: 18px;
+    transition: all .4s ease-in-out;
+    user-select: none;
+    font-weight: 100;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.volver:hover {
+    background-color: #cacaca;
+}
+
+.contactContainer,
+.inputContainer {
+    transition: all .4s ease-in-out;
+}
+
+.contactMessage,
+.contactInput {
+    transition: all .4s ease-in-out;
+}
+
+
+@media screen and (max-width: 800px) {
+    .contactContainer {
+        backdrop-filter: blur(0px);
+    }
+}
