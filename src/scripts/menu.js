@@ -3,32 +3,34 @@ const burgerMenus = document.getElementById("menu-hamburguesa");
 const burgerIcon = document.getElementById("menu-hamburguesa-icon");
 const mainMenu = document.querySelector(".menu-main");
 /* Secciones */
-const botonSection1 = document.getElementById("proyectosBtn");
-const botonSection2 = document.getElementById("habilidadesBtn");
-const botonSection3 = document.getElementById("contactoBtn");
+const navBtn = document.querySelectorAll("#navBtn");
 /* Menu de Configuracion */
 const navBar = document.getElementById("menu-config");
 const menuBtns = document.querySelectorAll(".bxs-cog");
 const overlay = document.querySelector(".overlay");
 const navBar1 = document.getElementById("config-icon-1");
-/* Menu de Idioma */
 const volverBtn = document.getElementById('volver-btn');
 const idiomaBtn = document.getElementById('idiomaBtn');
 const navBarIdioma = document.getElementById("sidebar-idioma");
-/* Overlay */
 const overlaySection = document.getElementById("overlay-section");
+const cuerpo = document.getElementById('cuerpo');
 
 /* Menu principal */
-burgerMenus.addEventListener("click", () => {
+function menu() {
     if (mainMenu.classList.contains('menu-main')) {
         mainMenu.classList.remove('menu-main');
         mainMenu.classList.add('menu-open');
+        cuerpo.style.overflow = 'hidden'
     } else {
         mainMenu.classList.remove('menu-open');
         mainMenu.classList.add('menu-main');
+        cuerpo.style.overflow = 'auto'
     }
 
     burgerIcon.classList.toggle("bx-x");
+}
+burgerMenus.addEventListener("click", () => {
+    menu()
 });
 
 const sectionOvr = "overlay";
@@ -93,29 +95,23 @@ function sectionBtn() {
     burgerIcon.classList.toggle("bx-x");
 }
 
-botonSection1.addEventListener("click", () => {
+/* Funcion para desactivar el menu automaticamente */
+setInterval(async () => {
     let ancho = window.innerWidth;
-    if (ancho < 800) {
-        sectionBtn();
+    if (ancho > 1000 && mainMenu.classList.contains('menu-open')) {
+        menu()
     } else {
         return;
     }
-});
+}, 100)
 
-botonSection2.addEventListener("click", () => {
-    let ancho = window.innerWidth;
-    if (ancho < 800) {
-        sectionBtn();
-    } else {
-        return;
-    }
-});
-
-botonSection3.addEventListener("click", () => {
-    let ancho = window.innerWidth;
-    if (ancho < 800) {
-        sectionBtn();
-    } else {
-        return;
-    }
-});
+navBtn.forEach(div => {
+    div.addEventListener("click", () => {
+        let ancho = window.innerWidth;
+        if (ancho < 800) {
+            menu()
+        } else {
+            return;
+        }
+    });
+})
