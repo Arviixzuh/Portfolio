@@ -29,13 +29,14 @@ function menu() {
 
     burgerIcon.classList.toggle("bx-x");
 }
+
 burgerMenus.addEventListener("click", () => {
     menu()
 });
 
+/* Funcion para animar la seccion overlay */
 const sectionOvr = "overlay";
 const sectionShow = "overlay-show";
-
 function animarSection() {
     if (overlaySection.classList.contains(sectionOvr)) {
         overlaySection.classList.remove(sectionOvr);
@@ -64,7 +65,6 @@ menuBtns.forEach((menuBtn) => {
     });
 });
 
-
 idiomaBtn.addEventListener("click", () => {
     navBarIdioma.classList.toggle("open-idioma");
 });
@@ -84,27 +84,15 @@ volverBtn.addEventListener("click", () => {
     navBarIdioma.classList.remove("open-idioma");
 })
 
-function sectionBtn() {
-    if (mainMenu.classList.contains('menu-main')) {
-        mainMenu.classList.remove('menu-main');
-        mainMenu.classList.add('menu-open');
-    } else {
-        mainMenu.classList.remove('menu-open');
-        mainMenu.classList.add('menu-main');
-    }
-    burgerIcon.classList.toggle("bx-x");
-}
-
 /* Funcion para desactivar el menu automaticamente */
-setInterval(async () => {
+window.addEventListener('resize', () => {
     let ancho = window.innerWidth;
     if (ancho > 1000 && mainMenu.classList.contains('menu-open')) {
         menu()
-    } else {
-        return;
     }
-}, 100)
+});
 
+/* Funcion para desactivar el menu cuando seleccionan una seccion */
 navBtn.forEach(div => {
     div.addEventListener("click", () => {
         let ancho = window.innerWidth;
