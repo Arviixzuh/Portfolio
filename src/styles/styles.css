@@ -125,7 +125,7 @@
     align-items: left;
     text-align: left;
     z-index: 1;
-    background: linear-gradient(var(--inicio-bg), var(--inicio-bg)), url("https://th.bing.com/th/id/R.0a225f114a70effe4bbd0159c619e5a4?rik=khveqThFoVIcXQ&pid=ImgRaw&r=0") no-repeat center center scroll;
+    background: linear-gradient(var(--inicio-bg), var(--inicio-bg)), url("../assets/img/Wallpaper.jpg") no-repeat center center scroll;
     background-size: cover;
     min-height: 100vh;
 }
