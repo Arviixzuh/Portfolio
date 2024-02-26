@@ -1,0 +1,128 @@
+.projectsContainer {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsContainer2 {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsContentContainer {
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectCardContainer {
+  border: var(--projectCardBorder);
+  padding: 20px;
+  display: flex;
+  transition: transform 400ms ease, border 400ms ease;
+  border-radius: 10px;
+  flex-direction: column;
+
+  &:hover {
+    border: var(--projectCardBorderHover);
+    transform: translateY(-5px);
+  }
+}
+
+.technologiesContainer {
+  gap: 5px;
+  display: flex;
+
+  img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+  }
+}
+
+.projectExternalLink {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  svg {
+    color: var(--iconColor);
+  }
+}
+
+.pinnedProjectCardContainer {
+  gap: 20px;
+  display: flex;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  button {
+    gap: 10px;
+    color: var(--projectButtonColor);
+    width: fit-content;
+    display: flex;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: var(--projectButtonBackground);
+  }
+}
+
+.pinnedProjectItem {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pinnedProjectsTechnologiesContainer {
+  gap: 5px;
+  display: flex;
+
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+}
+
+.projectBackgroundImg {
+  width: 343px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  .pinnedProjectCardContainer {
+    flex-direction: column;
+  }
+
+  .projectBackgroundImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .projectsContainer2 {
+    gap: 50px;
+  }
+
+  .pinnedProjectCardContainer {
+    gap: 5px;
+  }
+
+  .projectsContentContainer {
+    grid-template-columns: 1fr;
+  }
+}

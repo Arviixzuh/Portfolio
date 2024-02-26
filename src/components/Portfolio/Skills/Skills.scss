@@ -1,0 +1,14 @@
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15px, 15px));
+  width: 100%;
+  gap: 25px;
+}
+
+.skillItem {
+  img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+}

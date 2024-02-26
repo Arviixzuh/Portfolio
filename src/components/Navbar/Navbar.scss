@@ -1,0 +1,40 @@
+.changeThemeIcon {
+  cursor: pointer;
+  svg {
+    font-size: 20px;
+    color: var(--iconColor);
+  }
+}
+
+.navbarContainer {
+  top: 0;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  z-index: 10;
+  padding: 10px;
+  position: sticky;
+  max-width: 700px;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(45px);
+  background-color: var(--navBarBackground);
+
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+}
+
+.navbarProfileContainer {
+  gap: 10px;
+  display: flex;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  align-items: center;
+  h1 {
+    font-size: 20px;
+  }
+}
