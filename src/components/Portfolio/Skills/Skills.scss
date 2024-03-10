@@ -12,3 +12,9 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 800px) {
+  .skillsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(25px, 15px));
+  }
+}

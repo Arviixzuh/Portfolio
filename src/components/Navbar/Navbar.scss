@@ -8,11 +8,12 @@
 
 .navbarContainer {
   top: 0;
-  margin: 0 auto;
-  height: 60px;
+
+  height: 80px;
   display: flex;
   z-index: 10;
-  padding: 10px;
+  padding: 0 20px;
+
   position: sticky;
   max-width: 700px;
   align-items: center;
@@ -24,6 +25,7 @@
     width: 30px;
     height: 30px;
     object-fit: cover;
+    box-shadow: var(--avatarShadow);
     border-radius: 100%;
   }
 }

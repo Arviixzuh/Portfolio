@@ -26,13 +26,7 @@
   }
 }
 
-@media (max-width: 710px) {
-  .socialsContainer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 585px) {
+@media (max-width: 720px) {
   .socialsContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
