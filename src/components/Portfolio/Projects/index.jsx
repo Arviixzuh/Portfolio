@@ -1,13 +1,15 @@
 import React from 'react'
-import { BiLink } from 'react-icons/bi'
+import { BiCodeAlt } from 'react-icons/bi'
+import { SectionTitle } from '../SectionTitle'
+import { BiLink, BiLogoGithub } from 'react-icons/bi'
 import { MyProjects, MyPinnedProjects } from './MyProjects'
 import './Projects.scss'
 
 export const Projects = () => {
   return (
     <section>
+      <SectionTitle title={'Projects'} icon={<BiCodeAlt />} />
       <div className='projectsContainer'>
-        <h2>Projects</h2>
         <div className='projectsContainer2'>
           {MyPinnedProjects.map((item, index) => (
             <div key={index} className='pinnedProjectCardContainer'>
@@ -22,10 +24,20 @@ export const Projects = () => {
                     <img src={itemTwo.icon} key={itemTwo.name} />
                   ))}
                 </div>
-                <button>
-                  Live
-                  <BiLink />
-                </button>
+                <div className='pinnedProjectExternalLinks'>
+                  {item.live && (
+                    <a href={item.live} target='_blank'>
+                      Live
+                      <BiLink />
+                    </a>
+                  )}
+                  {item.code && (
+                    <a href={item.code} target='_blank'>
+                      Code
+                      <BiLogoGithub />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
@@ -33,10 +45,10 @@ export const Projects = () => {
         <div className='projectsContentContainer'>
           {MyProjects.map((item, index) => (
             <div key={index} className='projectCardContainer'>
-              <div className='projectExternalLink'>
+              <a className='projectExternalLink' href={item.live} target='_blank'>
                 <h4>{item.name}</h4>
                 <BiLink />
-              </div>
+              </a>
               <p>{item.description}</p>
               <div className='technologiesContainer'>
                 {item.technologies.map((itemTwo) => (

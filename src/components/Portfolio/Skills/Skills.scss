@@ -1,8 +1,8 @@
 .skillsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15px, 15px));
+  gap: 18px;
   width: 100%;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45px, 45px));
 }
 
 .skillItem {
@@ -10,11 +10,13 @@
     width: 35px;
     height: 35px;
     object-fit: cover;
+    user-select: none;
   }
 }
 
 @media (max-width: 800px) {
   .skillsContainer {
-    grid-template-columns: repeat(auto-fit, minmax(25px, 15px));
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(18px, 18px));
   }
 }

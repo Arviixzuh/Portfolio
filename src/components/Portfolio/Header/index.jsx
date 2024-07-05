@@ -11,12 +11,13 @@ export const Header = () => {
 
   return (
     <section>
+
       <div className='headerContainer'>
         <img src={Arvii} />
         <div className='bioContainer'>
           <div>
             <h1>Arviixzuh</h1>
-            <p>Fullstack developer</p>
+            <span className={'bioResumePosition'}>Fullstack developer</span>
             <p>
               My name is Victor, I am 18 years old, I live in Venezuela and I am studying systems
               engineering ☁️

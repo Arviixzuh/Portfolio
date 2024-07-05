@@ -1,6 +1,7 @@
 .socialsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   gap: 10px;
   a {
     gap: 10px;
@@ -8,6 +9,7 @@
     border: var(--socialCardBorder);
     display: flex;
     padding: 15px;
+    user-select: none;
     align-items: center;
     border-radius: 10px;
     transition: all 400ms ease;

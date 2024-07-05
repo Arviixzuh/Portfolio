@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { IoMailOutline } from 'react-icons/io5'
+import { SectionTitle } from '../SectionTitle'
 import { BiMailSend, BiCopy } from 'react-icons/bi'
 import './Email.scss'
 
@@ -17,7 +19,7 @@ export const Email = () => {
 
   return (
     <section>
-      <h2>Email</h2>
+      <SectionTitle title={'Email'} icon={<IoMailOutline />} />
       <div className='emailContainer'>
         <p>{emailAddress}</p>
         <div className='emailIconsContainer'>

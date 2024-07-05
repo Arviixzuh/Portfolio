@@ -14,10 +14,29 @@
   }
 }
 
+.circleColorBlur {
+  width: 100%;
+  height: 100vh;
+  filter: blur(150px);
+  position: absolute;
+  left: -300px;
+
+  top: -330px;
+  background: rgba(83, 194, 221, 0.137);
+  flex-shrink: 0;
+  z-index: 14;
+  border-radius: 100%;
+}
+
 .bioContainer {
   gap: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.bioResumePosition {
+  font-weight: 400;
+  color: var(--bioSkillTextColor);
 }
 
 .resumeContainer {
@@ -28,6 +47,7 @@
   display: flex;
   padding: 6px;
   align-items: center;
+  user-select: none;
   font-weight: 500;
   border-radius: 8px;
   background-color: var(--resumeButtonBackground);

@@ -1,11 +1,13 @@
 import React from 'react'
+import { BiAt } from 'react-icons/bi'
+import { SectionTitle } from '../SectionTitle'
 import { MySocials } from './MySocials'
 import './Socials.scss'
 
 export const Socials = () => {
   return (
     <section>
-      <h2>Socials</h2>
+      <SectionTitle title={'Socials'} icon={<BiAt />} />
       <div className='socialsContainer'>
         {MySocials.map((item, index) => (
           <a href={item.link} target='_blank' key={index}>

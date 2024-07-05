@@ -1,5 +1,7 @@
 import React from 'react'
 import { tech } from '../../TechIcons'
+import { BiCoffee } from 'react-icons/bi'
+import { SectionTitle } from '../SectionTitle'
 import './Skills.scss'
 
 export const Skills = () => {
@@ -7,7 +9,7 @@ export const Skills = () => {
 
   return (
     <section>
-      <h2>Skills</h2>
+      <SectionTitle title={'Skills'} icon={<BiCoffee />} />
       <div className='skillsContainer'>
         {MySkills.map((item, index) => (
           <div key={index} className='skillItem'>

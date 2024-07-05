@@ -1,5 +1,18 @@
+.experienceItem {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .experienceContainer {
   gap: 20px;
   display: flex;
   flex-direction: column;
+
+  li {
+    padding: 4px;
+    list-style: outside;
+    margin: 0 20px;
+    color: var(--texts);
+  }
 }
