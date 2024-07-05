@@ -18,7 +18,7 @@ import Expressjs from '../../assets/img/skills/Expressjs.webp'
 import DiscordJs from '../../assets/img/skills/Discordjs.png'
 import JavaScript from '../../assets/img/skills/Javascript.webp'
 import TypeScript from '../../assets/img/skills/Typescript.webp'
-import ElectronJs from '../../assets/img/skills/ElectronJs.webp'
+import ElectronJs from '../../assets/img/skills/Electronjs.webp'
 import TailwindCSS from '../../assets/img/skills/TailwindCSS.svg'
 
 export const tech = {
