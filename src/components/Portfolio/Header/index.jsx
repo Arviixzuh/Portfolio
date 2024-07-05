@@ -11,7 +11,6 @@ export const Header = () => {
 
   return (
     <section>
-
       <div className='headerContainer'>
         <img src={Arvii} />
         <div className='bioContainer'>
