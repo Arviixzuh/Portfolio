@@ -12,7 +12,9 @@ export const Header = () => {
   return (
     <section>
       <div className='headerContainer'>
-        <img src={Arvii} />
+        <div>
+          <img src={Arvii} />
+        </div>
         <div className='bioContainer'>
           <div>
             <h1>Arviixzuh</h1>
