@@ -34,7 +34,7 @@ export const Projects = () => {
                   {item.code && (
                     <a href={item.code} target='_blank'>
                       Code
-                      <BiLogoGithub />
+            
                     </a>
                   )}
                 </div>
