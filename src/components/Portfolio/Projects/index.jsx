@@ -1,7 +1,7 @@
 import React from 'react'
+import { BiLink } from 'react-icons/bi'
 import { BiCodeAlt } from 'react-icons/bi'
 import { SectionTitle } from '../SectionTitle'
-import { BiLink, BiLogoGithub } from 'react-icons/bi'
 import { MyProjects, MyPinnedProjects } from './MyProjects'
 import './Projects.scss'
 
