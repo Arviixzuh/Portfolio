@@ -1,6 +1,7 @@
 import { tech } from '../../TechIcons'
 import SIGEImage from '../../../assets/img/projects/SIGE.svg'
 import MarvigImage from '../../../assets/img/projects/Marvig.svg'
+import GestiniImage from '../../../assets/img/projects/Gestini.svg'
 import VitalcareImage from '../../../assets/img/projects/Vitalcare.svg'
 import MySymphonyImage from '../../../assets/img/projects/MySymphony.svg'
 
@@ -15,6 +16,23 @@ const mernStack = [
 ]
 
 export const MyPinnedProjects = [
+  {
+    name: 'Gestini',
+    code: null,
+    live: "https://www.gestini.com/",
+    background: GestiniImage,
+    description: 'Platform designed to facilitate the management of companies.',
+    technologies: [
+      tech.Redux,
+      tech.React,
+      tech.TypeScript,
+      tech.TailwindCSS,
+      tech.MySQL,
+      tech.Spring,
+      tech.Java,
+      tech.ElectronJs,
+    ],
+  },
   {
     name: 'Vitalcare',
     code: 'https://github.com/Arviixzuhs/Vitalcare',
