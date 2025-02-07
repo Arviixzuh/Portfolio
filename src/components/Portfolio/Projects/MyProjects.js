@@ -19,7 +19,7 @@ export const MyPinnedProjects = [
   {
     name: 'Gestini',
     code: null,
-    live: "https://www.gestini.com/",
+    live: 'https://www.gestini.com/',
     background: GestiniImage,
     description: 'Platform designed to facilitate the management of companies.',
     technologies: [
