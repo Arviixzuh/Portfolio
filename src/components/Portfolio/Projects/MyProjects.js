@@ -4,6 +4,7 @@ import MarvigImage from '../../../assets/img/projects/Marvig.svg'
 import GestiniImage from '../../../assets/img/projects/Gestini.svg'
 import VitalcareImage from '../../../assets/img/projects/Vitalcare.svg'
 import MySymphonyImage from '../../../assets/img/projects/MySymphony.svg'
+import DetailPlumbingImage from '../../../assets/img/projects/DetailPlumbing.svg'
 
 const mernStack = [
   tech.Sass,
@@ -31,6 +32,22 @@ export const MyPinnedProjects = [
       tech.Spring,
       tech.Java,
       tech.ElectronJs,
+    ],
+  },
+  {
+    name: 'Detail Plumbing',
+    code: null,
+    live: null,
+    background: DetailPlumbingImage,
+    description: 'Platform with project management, estimation and drawing editing tools.',
+    technologies: [
+      tech.Redux,
+      tech.React,
+      tech.TypeScript,
+      tech.TailwindCSS,
+      tech.MySQL,
+      tech.Nestjs,
+      tech.PrismaORM,
     ],
   },
   {

@@ -20,7 +20,7 @@ export const Header = () => {
             <h1>Arviixzuh</h1>
             <span className={'bioResumePosition'}>Fullstack developer</span>
             <p>
-              My name is Victor, I am 18 years old, I live in Venezuela and I am studying systems
+              My name is Victor, I am 19 years old, I live in Venezuela and I am studying systems
               engineering ☁️
             </p>
           </div>

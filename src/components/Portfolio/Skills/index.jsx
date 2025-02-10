@@ -1,4 +1,3 @@
-import React from 'react'
 import { tech } from '../../TechIcons'
 import { BiCoffee } from 'react-icons/bi'
 import { SectionTitle } from '../SectionTitle'
@@ -13,7 +12,8 @@ export const Skills = () => {
       <div className='skillsContainer'>
         {MySkills.map((item, index) => (
           <div key={index} className='skillItem'>
-            <img src={item.icon} />
+            <img src={item.icon || '/placeholder.svg'} alt={item.name} />
+            <span className='tooltip'>{item.name}</span>
           </div>
         ))}
       </div>

@@ -3,8 +3,8 @@ export const MyExperience = [
     company: 'Dream Junk Studios',
     role: 'Fullstack Developer',
     date: {
-      start: 'sep 2022',
-      end: 'now',
+      start: 'sep. 2022',
+      end: 'oct. 2024',
     },
     points: [
       'I participated in the frontend and backend development of different projects at the same time.',

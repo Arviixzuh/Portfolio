@@ -1,5 +1,6 @@
 import C from '../../assets/img/skills/C.webp'
 import Git from '../../assets/img/skills/Git.webp'
+import AWS from '../../assets/img/skills/AWS.png'
 import Sass from '../../assets/img/skills/Sass.webp'
 import CSS3 from '../../assets/img/skills/CSS3.webp'
 import Java from '../../assets/img/skills/Java.webp'
@@ -8,8 +9,12 @@ import MySQL from '../../assets/img/skills/MySQL.svg'
 import React from '../../assets/img/skills/React.webp'
 import Redux from '../../assets/img/skills/Redux.webp'
 import NestJs from '../../assets/img/skills/Nestjs.svg'
+import Ubuntu from '../../assets/img/skills/ubuntu.png'
 import Nodejs from '../../assets/img/skills/Nodejs.webp'
+import Docker from '../../assets/img/skills/Docker.webp'
+import Nginx from '../../assets/img/skills/Nginx.webp'
 import Spring from '../../assets/img/skills/Spring.webp'
+import SQLite from '../../assets/img/skills/SQLite.png'
 import Python from '../../assets/img/skills/Python.webp'
 import Mongodb from '../../assets/img/skills/Mongodb.webp'
 import Socketio from '../../assets/img/skills/Socketio.webp'
@@ -19,9 +24,26 @@ import DiscordJs from '../../assets/img/skills/Discordjs.png'
 import JavaScript from '../../assets/img/skills/Javascript.webp'
 import TypeScript from '../../assets/img/skills/Typescript.webp'
 import ElectronJs from '../../assets/img/skills/Electronjs.webp'
+import Cloudflare from '../../assets/img/skills/Cloudflare.png'
 import TailwindCSS from '../../assets/img/skills/TailwindCSS.svg'
 
 export const tech = {
+  JavaScript: {
+    name: 'JavaScript',
+    icon: JavaScript,
+  },
+  TypeScript: {
+    name: 'TypeScript',
+    icon: TypeScript,
+  },
+  Java: {
+    name: 'Java',
+    icon: Java,
+  },
+  Python: {
+    name: 'Python',
+    icon: Python,
+  },
   C: {
     name: 'C',
     icon: C,
@@ -34,29 +56,53 @@ export const tech = {
     name: 'CSS',
     icon: CSS3,
   },
+  Sass: {
+    name: 'Sass',
+    icon: Sass,
+  },
+  TailwindCSS: {
+    name: 'TailwindCSS',
+    icon: TailwindCSS,
+  },
+  React: {
+    name: 'React',
+    icon: React,
+  },
+  ElectronJs: {
+    name: 'ElectronJS',
+    icon: ElectronJs,
+  },
+  Redux: {
+    name: 'Redux',
+    icon: Redux,
+  },
+  ExpressJs: {
+    name: 'Express',
+    icon: Expressjs,
+  },
+  Spring: {
+    name: 'Spring Framework',
+    icon: Spring,
+  },
+  Nestjs: {
+    name: 'Nestjs',
+    icon: NestJs,
+  },
+  NodeJs: {
+    name: 'Node.js',
+    icon: Nodejs,
+  },
   DiscordJs: {
     name: 'Discord.js',
     icon: DiscordJs,
   },
-  Java: {
-    name: 'Java',
-    icon: Java,
-  },
-  JavaScript: {
-    name: 'JavaScript',
-    icon: JavaScript,
-  },
-  TypeScript: {
-    name: 'JavaScript',
-    icon: TypeScript,
+  SQLite: {
+    name: 'SQLite',
+    icon: SQLite
   },
   Mongodb: {
     name: 'MongoDB',
     icon: Mongodb,
-  },
-  Git: {
-    name: 'GIT',
-    icon: Git,
   },
   MySQL: {
     name: 'MySQL',
@@ -66,48 +112,32 @@ export const tech = {
     name: 'PrismaORM',
     icon: PrismaORM,
   },
-  NodeJs: {
-    name: 'Node.js',
-    icon: Nodejs,
+  AWS: {
+    name: 'AWS',
+    icon: AWS,
   },
-  Spring: {
-    name: 'Spring Framework',
-    icon: Spring,
+  Docker: {
+    name: 'Docker',
+    icon: Docker,
   },
-  ExpressJs: {
-    name: 'Express',
-    icon: Expressjs,
+  Cloudflare: {
+    name: 'Cloudflare',
+    icon: Cloudflare,
   },
-  Python: {
-    name: 'Python',
-    icon: Python,
+  Ubuntu: {
+    name: 'Ubuntu',
+    icon: Ubuntu,
   },
-  React: {
-    name: 'React',
-    icon: React,
+  Nginx: {
+    name: 'Nginx',
+    icon: Nginx,
   },
-  Nestjs: {
-    name: 'Nestjs',
-    icon: NestJs,
-  },
-  Redux: {
-    name: 'Redux',
-    icon: Redux,
-  },
-  Sass: {
-    name: 'Sass',
-    icon: Sass,
-  },
-  TailwindCSS: {
-    name: 'TailwindCSS',
-    icon: TailwindCSS,
+  Git: {
+    name: 'GIT',
+    icon: Git,
   },
   SocketIo: {
-    name: 'Socket.oi',
+    name: 'Socket.io',
     icon: Socketio,
-  },
-  ElectronJs: {
-    name: 'ElectronJs',
-    icon: ElectronJs,
   },
 }

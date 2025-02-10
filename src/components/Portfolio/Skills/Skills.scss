@@ -1,22 +1,94 @@
+.skills-section {
+  padding: 20px;
+  position: relative;
+}
+
 .skillsContainer {
-  gap: 18px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45px, 45px));
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .skillItem {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+
   img {
     width: 35px;
     height: 35px;
-    object-fit: cover;
+    object-fit: contain;
     user-select: none;
+  }
+
+  .tooltip {
+    left: 50%;
+    width: auto;
+    color: var(--projectButtonColor);
+    bottom: 110%;
+    padding: 5px 10px;
+    z-index: 1;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    font-size: 14px;
+    transform: translateX(-50%);
+    text-align: center;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    font-weight: 400;
+    white-space: nowrap;
+    border-radius: 6px;
+    pointer-events: none;
+    background-color: var(--projectButtonBackground);
+  }
+
+  &:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .skillItem {
+    width: 45px;
+    height: 45px;
+
+    img {
+      width: 75%;
+      height: 75%;
+    }
+
+    .tooltip {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .skillsContainer {
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(18px, 18px));
+    gap: 10px;
+  }
+
+  .skillItem {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: 70%;
+      height: 70%;
+    }
+
+    .tooltip {
+      font-size: 10px;
+      padding: 3px 6px;
+    }
   }
 }
