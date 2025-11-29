@@ -16,11 +16,8 @@ export const Header = () => {
         <div className='bioContainer'>
           <div>
             <h1>Arviixzuh</h1>
-            <span className={'bioResumePosition'}>Fullstack developer</span>
-            <p>
-              My name is Victor, I am 19 years old, I live in Venezuela and I am studying systems
-              engineering ☁️
-            </p>
+            <span className='bioResumePosition'>Software developer</span>
+            <p>🌱💻 Software developer & computer engineering student</p>
           </div>
           <button className='resumeContainer' onClick={() => openResume()}>
             <BiUserPin /> Resume
