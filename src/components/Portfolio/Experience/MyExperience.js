@@ -3,8 +3,8 @@ export const MyExperience = [
     company: 'Freelance Software Developer',
     role: 'Backend & Fullstack Developer',
     date: {
-      start: 'sep. 2024',
-      end: 'now',
+      start: 'sept. 2024',
+      end: 'present',
     },
     points: [
       'Designed and implemented backend architectures using TypeScript, NestJS, and Prisma with a focus on extensibility.',
@@ -20,7 +20,7 @@ export const MyExperience = [
     company: 'Dream Junk Studios',
     role: 'Fullstack Developer',
     date: {
-      start: 'sep. 2022',
+      start: 'sept. 2022',
       end: 'oct. 2024',
     },
     points: [
