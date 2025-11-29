@@ -1,5 +1,3 @@
-import React from 'react'
-import Arvii from '../../../assets/img/Arvii.jpg'
 import Curriculum from '../../../assets/files/Curriculum.pdf'
 import { BiUserPin } from 'react-icons/bi'
 import './Header.scss'
@@ -13,7 +11,7 @@ export const Header = () => {
     <section>
       <div className='headerContainer'>
         <div>
-          <img src={Arvii} />
+          <img src={'https://avatars.githubusercontent.com/u/94721992?v=4'} />
         </div>
         <div className='bioContainer'>
           <div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Arvii from '../../assets/img/Arvii.jpg'
 import { Themes } from './Themes'
 import './Navbar.scss'
 
@@ -32,7 +31,7 @@ export const Navbar = () => {
   return (
     <nav className='navbarContainer'>
       <div className='navbarProfileContainer' ref={profileRef}>
-        <img src={Arvii} />
+        <img src='https://avatars.githubusercontent.com/u/94721992?v=4' />
         <h1>Arviixzuh</h1>
       </div>
       <span onClick={() => changeTheme()} className='changeThemeIcon'>
