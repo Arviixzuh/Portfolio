@@ -1,17 +1,16 @@
-import Curriculum from '../../../assets/files/Curriculum.pdf'
+import Curriculum from '../../../assets/files/VictorPandolfiCV.pdf'
 import { BiUserPin } from 'react-icons/bi'
 import './Header.scss'
 
 export const Header = () => {
-  const openResume = () => {
-    window.open(Curriculum, '_blank')
-  }
-
   return (
     <section>
       <div className='headerContainer'>
         <div>
-          <img src={'https://avatars.githubusercontent.com/u/94721992?v=4'} />
+          <img
+            src='https://avatars.githubusercontent.com/u/94721992?v=4'
+            alt='Victor Pandolfi Profile'
+          />
         </div>
         <div className='bioContainer'>
           <div>
@@ -19,9 +18,9 @@ export const Header = () => {
             <span className='bioResumePosition'>Software developer</span>
             <p>🌱💻 Software developer & computer engineering student</p>
           </div>
-          <button className='resumeContainer' onClick={() => openResume()}>
+          <a href={Curriculum} target='_blank' rel='noreferrer' className='resumeContainer'>
             <BiUserPin /> Resume
-          </button>
+          </a>
         </div>
       </div>
     </section>
