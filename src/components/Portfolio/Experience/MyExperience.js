@@ -1,7 +1,7 @@
 export const MyExperience = [
   {
-    company: 'Freelance Software Developer',
-    role: 'Backend & Fullstack Developer',
+    company: 'Freelance',
+    role: 'Software Developer',
     date: {
       start: 'sept. 2024',
       end: 'present',
