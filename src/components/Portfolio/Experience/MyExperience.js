@@ -3,7 +3,7 @@ export const MyExperience = [
     company: 'Freelance',
     role: 'Software Developer',
     date: {
-      start: 'sept. 2024',
+      start: 'sept. 2019',
       end: 'present',
     },
     points: [
