@@ -16,7 +16,10 @@ export const Header = () => {
           <div>
             <h1>Arviixzuh</h1>
             <span className='bioResumePosition'>Software developer</span>
-            <p>🌱💻 Software developer & computer engineering student</p>
+            <p>
+              🌱💻 Software Developer specializing in the design of modular and scalable
+              architectures using TypeScript (NestJS) and Java (Spring) ecosystems.
+            </p>
           </div>
           <a href={Curriculum} target='_blank' rel='noreferrer' className='resumeContainer'>
             <BiUserPin /> Resume
