@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiBriefcase } from 'react-icons/bi'
 import { MyExperience } from './MyExperience'
 import { SectionTitle } from '../SectionTitle'

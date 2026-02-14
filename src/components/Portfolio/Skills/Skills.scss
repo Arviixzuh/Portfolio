@@ -3,92 +3,116 @@
   position: relative;
 }
 
+/* CONTENEDOR GENERAL */
 .skillsContainer {
-  gap: 15px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
+  gap: 40px;
 }
 
-.skillItem {
-  width: 35px;
-  height: 35px;
+/* CATEGORIA */
+.skillsContent {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.categoryTitle {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.categoryIcon {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.skillsContent h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--texts);
+}
+
+/* ICON GRID */
+.skillsContentIcons {
+  display: flex;
+  flex-wrap: wrap; // 🔥 permite responsive real
+  gap: 12px;
+}
+
+/* CHIP */
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: var(--texts);
+  font-weight: 400;
+  border: var(--socialCardBorder);
+
+  transition: all 0.3s ease;
+  cursor: default;
+  white-space: nowrap;
+
+  &:hover {
+    border: var(--socialCardBorderHover);
+    transform: translateY(-2px);
+  }
 
   img {
-    width: 35px;
-    height: 35px;
+    width: 22px;
+    height: 22px;
     object-fit: contain;
     user-select: none;
   }
 
-  .tooltip {
-    left: 50%;
-    width: auto;
-    color: var(--projectButtonColor);
-    bottom: 110%;
-    padding: 5px 10px;
-    z-index: 1;
-    opacity: 0;
-    display: flex;
-    position: absolute;
-    font-size: 14px;
-    transform: translateX(-50%);
-    text-align: center;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    font-weight: 400;
-    white-space: nowrap;
-    border-radius: 6px;
-    pointer-events: none;
-    background-color: var(--projectButtonBackground);
-  }
+  span {
 
-  &:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+    font-weight: 400;
   }
 }
 
-@media (max-width: 1024px) {
+/* ============================= */
+/* 💻 LARGE SCREENS (>= 1200px) */
+/* ============================= */
+@media (min-width: 1200px) {
   .skillItem {
-    width: 45px;
-    height: 45px;
+    padding: 8px 16px;
 
     img {
-      width: 75%;
-      height: 75%;
+      width: 24px;
+      height: 24px;
     }
 
-    .tooltip {
-      font-size: 12px;
-      padding: 4px 8px;
+    span {
+      font-size: 0.9rem;
     }
   }
 }
 
-@media (max-width: 768px) {
-  .skillsContainer {
+/* ============================= */
+/* 💻 TABLET */
+/* ============================= */
+@media (max-width: 1024px) {
+  .skillsContentIcons {
     gap: 10px;
   }
 
   .skillItem {
-    width: 40px;
-    height: 40px;
+    padding: 6px 12px;
 
     img {
-      width: 70%;
-      height: 70%;
+      width: 20px;
+      height: 20px;
     }
 
-    .tooltip {
-      font-size: 10px;
-      padding: 3px 6px;
+    span {
+      font-size: 0.8rem;
     }
   }
 }

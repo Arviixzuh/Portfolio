@@ -21,7 +21,9 @@
   border: var(--projectCardBorder);
   padding: 20px;
   display: flex;
-  transition: transform 400ms ease, border 400ms ease;
+  transition:
+    transform 400ms ease,
+    border 400ms ease;
   border-radius: 10px;
   flex-direction: column;
 
@@ -106,6 +108,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+
+
 }
 
 @media (max-width: 720px) {

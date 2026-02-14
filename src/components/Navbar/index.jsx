@@ -3,38 +3,45 @@ import { Themes } from './Themes'
 import './Navbar.scss'
 
 export const Navbar = () => {
-  const [theme, setTheme] = React.useState(Themes.ligh)
   const profileRef = React.useRef(null)
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 100
-        ? (profileRef.current.style.opacity = 1)
-        : (profileRef.current.style.opacity = 0)
-    })
-  }, [])
+  const [theme, setTheme] = React.useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+
+    if (savedTheme === Themes.light.name) {
+      return Themes.light
+    }
+
+    return Themes.dark
+  })
 
   React.useEffect(() => {
-    const temaGuardado = localStorage.getItem('theme')
-    if (temaGuardado) {
-      setTheme(temaGuardado == 'ligh' ? Themes.ligh : Themes.nigth)
-      document.body.classList.add(temaGuardado)
+    document.body.classList.remove(Themes.light.name, Themes.dark.name)
+    document.body.classList.add(theme.name)
+    localStorage.setItem('theme', theme.name)
+  }, [theme])
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (!profileRef.current) return
+      profileRef.current.style.opacity = window.scrollY > 100 ? '1' : '0'
     }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const changeTheme = () => {
-    document.body.classList.toggle('nigth')
-    setTheme(theme.name == 'ligh' ? Themes.nigth : Themes.ligh)
-    localStorage.setItem('theme', theme.name == 'ligh' ? Themes.nigth.name : Themes.ligh.name)
+    setTheme((prev) => (prev.name === Themes.light.name ? Themes.dark : Themes.light))
   }
 
   return (
     <nav className='navbarContainer'>
       <div className='navbarProfileContainer' ref={profileRef}>
-        <img src='https://avatars.githubusercontent.com/u/94721992?v=4' />
+        <img src='https://avatars.githubusercontent.com/u/94721992?v=4' alt='Profile' />
         <h1>Arviixzuh</h1>
       </div>
-      <span onClick={() => changeTheme()} className='changeThemeIcon'>
+      <span onClick={changeTheme} className='changeThemeIcon'>
         {theme.icon}
       </span>
     </nav>

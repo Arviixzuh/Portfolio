@@ -52,9 +52,13 @@
   font-size: 13px;
   border-radius: 8px;
   background-color: var(--resumeButtonBackground);
-
+  transition: transform 0.3s; // animación suave
   svg {
     font-size: 20px;
+  }
+
+  &:active {
+    transform: scale(0.95); // lo hace 10% más pequeño
   }
 }
 

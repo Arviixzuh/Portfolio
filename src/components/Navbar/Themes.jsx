@@ -1,12 +1,12 @@
 import { BiMoon, BiSun } from 'react-icons/bi'
 
 export const Themes = {
-  nigth: {
-    name: 'nigth',
+  dark: {
+    name: 'dark',
     icon: <BiSun />,
   },
-  ligh: {
-    name: 'ligh',
+  light: {
+    name: 'light',
     icon: <BiMoon />,
   },
 }

@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { IoMailOutline } from 'react-icons/io5'
+import React from 'react'
 import { SectionTitle } from '../SectionTitle'
+import { IoMailOutline } from 'react-icons/io5'
 import { BiMailSend, BiCopy } from 'react-icons/bi'
 import './Email.scss'
 
 export const Email = () => {
-  const [emailCopied, setEmailCopied] = useState(false)
+  const [emailCopied, setEmailCopied] = React.useState(false)
   const emailAddress = 'arviixzuh@gmail.com'
 
   const handleCopy = () => {

@@ -19,13 +19,16 @@ import Python from '../../assets/img/skills/Python.webp'
 import Mongodb from '../../assets/img/skills/Mongodb.webp'
 import Socketio from '../../assets/img/skills/Socketio.webp'
 import PrismaORM from '../../assets/img/skills/PrismaORM.webp'
-import Expressjs from '../../assets/img/skills/Expressjs.webp'
+import PostgreSQL from '../../assets/img/skills/PostgreSQL.png'
+import Expressjs from '../../assets/img/skills/Expressjs.png'
 import DiscordJs from '../../assets/img/skills/Discordjs.png'
 import JavaScript from '../../assets/img/skills/Javascript.webp'
 import TypeScript from '../../assets/img/skills/Typescript.webp'
 import ElectronJs from '../../assets/img/skills/Electronjs.webp'
 import Cloudflare from '../../assets/img/skills/Cloudflare.png'
+import GithubActions from '../../assets/img/skills/GithubActions.png'
 import TailwindCSS from '../../assets/img/skills/TailwindCSS.svg'
+import GCP from '../../assets/img/skills/GCP.png'
 
 export const tech = {
   JavaScript: {
@@ -85,7 +88,7 @@ export const tech = {
     icon: Spring,
   },
   Nestjs: {
-    name: 'Nestjs',
+    name: 'NestJS',
     icon: NestJs,
   },
   NodeJs: {
@@ -98,7 +101,7 @@ export const tech = {
   },
   SQLite: {
     name: 'SQLite',
-    icon: SQLite
+    icon: SQLite,
   },
   Mongodb: {
     name: 'MongoDB',
@@ -107,6 +110,10 @@ export const tech = {
   MySQL: {
     name: 'MySQL',
     icon: MySQL,
+  },
+  PostgreSQL: {
+    name: 'PostgreSQL',
+    icon: PostgreSQL,
   },
   PrismaORM: {
     name: 'PrismaORM',
@@ -132,6 +139,10 @@ export const tech = {
     name: 'Nginx',
     icon: Nginx,
   },
+  GCP: {
+    name: 'GCP',
+    icon: GCP,
+  },
   Git: {
     name: 'GIT',
     icon: Git,
@@ -139,5 +150,9 @@ export const tech = {
   SocketIo: {
     name: 'Socket.io',
     icon: Socketio,
+  },
+  GithubActions: {
+    name: 'Github Actions',
+    icon: GithubActions,
   },
 }
