@@ -34,30 +34,27 @@
 .skillsContent h4 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--texts);
+  color: var(--subTitles);
 }
 
-/* ICON GRID */
 .skillsContentIcons {
   display: flex;
-  flex-wrap: wrap; // 🔥 permite responsive real
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-/* CHIP */
 .skillItem {
-  display: flex;
-  align-items: center;
   gap: 8px;
-  padding: 6px 14px;
-  border-radius: 8px;
   color: var(--texts);
-  font-weight: 400;
-  border: var(--socialCardBorder);
-
-  transition: all 0.3s ease;
   cursor: default;
+  border: var(--socialCardBorder);
+  display: flex;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+  align-items: center;
+  font-weight: 400;
   white-space: nowrap;
+  border-radius: 8px;
 
   &:hover {
     border: var(--socialCardBorderHover);
@@ -72,14 +69,10 @@
   }
 
   span {
-
     font-weight: 400;
   }
 }
 
-/* ============================= */
-/* 💻 LARGE SCREENS (>= 1200px) */
-/* ============================= */
 @media (min-width: 1200px) {
   .skillItem {
     padding: 8px 16px;
@@ -95,9 +88,6 @@
   }
 }
 
-/* ============================= */
-/* 💻 TABLET */
-/* ============================= */
 @media (max-width: 1024px) {
   .skillsContentIcons {
     gap: 10px;

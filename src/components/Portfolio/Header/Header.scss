@@ -45,20 +45,20 @@
   width: fit-content;
   cursor: pointer;
   display: flex;
-  padding: 6px;
+  padding: 6px 14px;
   align-items: center;
   user-select: none;
   font-weight: 500;
   font-size: 13px;
   border-radius: 8px;
   background-color: var(--resumeButtonBackground);
-  transition: transform 0.3s; // animación suave
+  transition: transform 0.3s; 
   svg {
     font-size: 20px;
   }
 
   &:active {
-    transform: scale(0.95); // lo hace 10% más pequeño
+    transform: scale(0.95);
   }
 }
 
