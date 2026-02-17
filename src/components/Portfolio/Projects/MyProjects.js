@@ -4,6 +4,7 @@ import MarvigImage from '../../../assets/img/projects/Marvig.svg'
 import GestiniImage from '../../../assets/img/projects/Gestini.svg'
 import VitalcareImage from '../../../assets/img/projects/Vitalcare.svg'
 import MySymphonyImage from '../../../assets/img/projects/MySymphony.svg'
+import LitiumShopImage from '../../../assets/img/projects/Litium.svg'
 import DetailPlumbingImage from '../../../assets/img/projects/DetailPlumbing.svg'
 
 const mernStack = [
@@ -51,6 +52,23 @@ export const MyPinnedProjects = [
     ],
   },
   {
+    name: 'Litium',
+    code: 'https://github.com/Arviixzuhs/Litium',
+    live: null,
+    background: LitiumShopImage,
+    description: 'A centralized ERP solution to streamline inventory and digital sales.',
+    technologies: [
+      tech.Redux,
+      tech.React,
+      tech.TailwindCSS,
+      tech.MySQL,
+      tech.Nestjs,
+      tech.PrismaORM,
+      tech.TypeScript,
+      tech.SocketIo,
+    ],
+  },
+  {
     name: 'Vitalcare',
     code: 'https://github.com/Arviixzuhs/Vitalcare',
     live: null,
@@ -77,19 +95,11 @@ export const MyPinnedProjects = [
     technologies: mernStack,
   },
   {
-    name: 'Marvig',
-    code: null,
-    live: null,
-    background: MarvigImage,
-    description: 'Apartment rental platform.',
-    technologies: mernStack,
-  },
-  {
     name: 'My Symphony',
     code: 'https://github.com/Arviixzuh/My-Symphony',
     live: 'https://arviixzuh.github.io/My-Symphony/',
     background: MySymphonyImage,
-    description: 'Listen to your favorite lo-fi music.',
+    description: 'A lofi stream blending relaxing beats and visuals for deep focus.',
     technologies: [tech.HTML, tech.CSS, tech.JavaScript],
   },
 ]
