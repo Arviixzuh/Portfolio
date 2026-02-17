@@ -95,7 +95,7 @@ export const MyPinnedProjects = [
 ]
 
 export const MyProjects = [
-  {
+  /* {
     name: 'Gunter',
     live: 'https://github.com/Arviixzuh/Gunter',
     description: 'Multifunctional bot for Discord.',
@@ -106,5 +106,5 @@ export const MyProjects = [
     live: 'https://arviixzuh.github.io/Easy-Translate/',
     description: 'Translate text and voice.',
     technologies: [tech.HTML, tech.CSS, tech.JavaScript],
-  },
+  }, */
 ]

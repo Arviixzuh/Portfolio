@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiLink } from 'react-icons/bi'
 import { BiCodeAlt } from 'react-icons/bi'
 import { SectionTitle } from '../SectionTitle'
@@ -41,22 +40,24 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <div className='projectsContentContainer'>
-          {MyProjects.map((item, index) => (
-            <div key={index} className='projectCardContainer'>
-              <a className='projectExternalLink' href={item.live} target='_blank'>
-                <h4>{item.name}</h4>
-                <BiLink />
-              </a>
-              <p>{item.description}</p>
-              <div className='technologiesContainer'>
-                {item.technologies.map((itemTwo) => (
-                  <img src={itemTwo.icon} alt={itemTwo.name} key={itemTwo.name} />
-                ))}
+        {MyProjects.length > 0 && (
+          <div className='projectsContentContainer'>
+            {MyProjects.map((item, index) => (
+              <div key={index} className='projectCardContainer'>
+                <a className='projectExternalLink' href={item.live} target='_blank'>
+                  <h4>{item.name}</h4>
+                  <BiLink />
+                </a>
+                <p>{item.description}</p>
+                <div className='technologiesContainer'>
+                  {item.technologies.map((itemTwo) => (
+                    <img src={itemTwo.icon} alt={itemTwo.name} key={itemTwo.name} />
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )
