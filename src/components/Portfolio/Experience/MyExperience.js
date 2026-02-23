@@ -7,12 +7,10 @@ export const MyExperience = [
       end: 'present',
     },
     points: [
-      'Co-founded and led the architectural design of a multi-tenant ERP platform targeting retail and commercial businesses.',
-      'Defined core system architecture, including branch-level tenant isolation, granular RBAC authorization, and transactional consistency.',
-      "Implemented direct fiscal integration with Argentina's AFIP API for compliant electronic invoicing.",
-      'Led the technical development of a hybrid solution using Electron with a decoupled Spring-based backend.',
-      'Managed relational database schemas and versioned migrations using Hibernate and Liquibase.',
-      'Automated CI/CD pipelines to ensure reproducible deployments across production environments.',
+      'Co-founded and led the architectural design of a multi-tenant ERP platform with data isolation and RBAC control.',
+      'Developed a hybrid desktop/web solution using Electron with a decoupled Spring-based backend.',
+      'Contributed to the fiscal integration with the AFIP API to automate electronic invoicing issuance.',
+      'Managed database lifecycles and automated CI/CD pipelines for production environments.',
     ],
   },
   {
@@ -23,9 +21,10 @@ export const MyExperience = [
       end: 'may. 2025',
     },
     points: [
-      'Developed precision tools for editing PDF plans and automated budget calculations from digital measurements.',
-      'Implemented a robust RBAC system and change tracking to ensure total oversight of project reviews.',
-      'Spearheaded the diagnostic phase through professional interviews, identifying and resolving critical industry bottlenecks.',
+      'Developed precision tools for editing and tracing measurements (distances and areas) directly on PDF blueprints.',
+      'Automated budget calculations and material estimations derived from digital measurements taken on the plans.',
+      'Implemented a comprehensive traceability system featuring per-user change logs and budget versioning.',
+      'Conducted the diagnostic phase through professional interviews to identify and resolve critical bottlenecks within the architectural sector.',
     ],
   },
   {
