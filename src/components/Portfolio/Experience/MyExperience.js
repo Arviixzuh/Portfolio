@@ -8,6 +8,7 @@ export const MyExperience = [
     },
     points: [
       'Co-founded and led the architectural design of a multi-tenant ERP platform with data isolation and RBAC control.',
+      'Designed and implemented an AI agent for automated data extraction and process automation.',
       'Developed a hybrid desktop/web solution using Electron with a decoupled Spring-based backend.',
       'Contributed to the fiscal integration with the AFIP API to automate electronic invoicing issuance.',
       'Managed database lifecycles and automated CI/CD pipelines for production environments.',
