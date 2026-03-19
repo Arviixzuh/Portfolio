@@ -15,9 +15,9 @@ export const Header = () => {
         <div className='bioContainer'>
           <div>
             <h1>Arviixzuh</h1>
-            <span className='bioResumePosition'>Software Developer</span>
+            <span className='bioResumePosition'>Software Engineer</span>
             <p>
-              🌱💻 Software Developer with +7 years of experience, focused on building maintainable
+              🌱💻 Software Engineer with +7 years of experience, focused on building maintainable
               and efficient applications using NestJS and Spring Boot.
             </p>
           </div>
