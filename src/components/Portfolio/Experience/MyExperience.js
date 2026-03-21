@@ -7,11 +7,9 @@ export const MyExperience = [
       end: 'present',
     },
     points: [
-      'Co-founded and led the architectural design of a multi-tenant ERP platform with data isolation and RBAC control.',
-      'Designed and implemented an AI agent for automated data extraction and process automation.',
-      'Developed a hybrid desktop/web solution using Electron with a decoupled Spring-based backend.',
-      'Contributed to the fiscal integration with the AFIP API to automate electronic invoicing issuance.',
-      'Managed database lifecycles and automated CI/CD pipelines for production environments.',
+      'Contributed to the design and implementation of direct tax integration with the “ARCA” (Argentina) API for issuing compliant electronic invoices. ',
+      'Directed strategic decisions regarding the technology stack, infrastructure, and long-term technical roadmap, aligning them with business objectives. ',
+      'Implemented a specialized AI agent for data extraction and analysis, reducing manual intervention across multiple workflows and enabling faster, more consistent decision-making throughout the platform.',
     ],
   },
   {
@@ -22,10 +20,9 @@ export const MyExperience = [
       end: 'may. 2025',
     },
     points: [
+      'Managed the diagnostic phase through professional interviews, identifying and resolving critical bottlenecks.',
       'Developed precision tools for editing and tracing measurements (distances and areas) directly on PDF blueprints.',
-      'Automated budget calculations and material estimations derived from digital measurements taken on the plans.',
-      'Implemented a comprehensive traceability system featuring per-user change logs and budget versioning.',
-      'Conducted the diagnostic phase through professional interviews to identify and resolve critical bottlenecks within the architectural sector.',
+      'Applied a robust “RBAC” system and change tracking (audit log) to ensure full oversight of project revisions.',
     ],
   },
   {
@@ -36,10 +33,9 @@ export const MyExperience = [
       end: 'may. 2024',
     },
     points: [
-      'Developed a business management system with an integrated social network, ensuring modular folder structures and semantic DTO validation.',
-      'Created Discord bots with custom functionalities to automate workflows and enhance community engagement.',
-      'Collaborated closely with UI/UX designers, ensuring defensive validation and seamless integration of user interfaces.',
-      'Implemented automated CI/CD deployment using GitHub Actions, ensuring continuous integrations and reliable deliveries.',
+      'Collaborated closely with UI/UX designers, ensuring validation and seamless integration of user interfaces.',
+      'Built Discord bots with custom features to automate workflows and improve community engagement, reducing operating costs. ',
+      'Architected a business management system with an integrated social network that unified communication, boosted engagement in internal projects, and established a centralized space for collaboration within the organization. ',
     ],
   },
   {
@@ -50,10 +46,9 @@ export const MyExperience = [
       end: 'oct. 2022',
     },
     points: [
-      'Developed robust APIs and maintained servers for diverse clients using NestJS.',
-      'Optimized complex business logic by implementing Builder and Specification patterns for audit-filtering systems.',
-      'Resolved critical infrastructure incidents (Nginx, Certbot SSL, Docker) across Google Cloud environments.',
-      'Developed custom integrations and Discord automation bots to streamline internal workflows for diverse clients.',
+      'Developed custom integrations and automation bots for Discord, streamlining internal workflows and improving operational efficiency for various clients. ',
+      'Optimized complex business logic by implementing Builder and Specification patterns, significantly improving code maintainability in audit filtering systems. ',
+      'Engineered robust RESTful APIs and maintained multi‑client server environments using NestJS, supporting several B2B platforms with consistent performance and reliability. ',
     ],
   },
 ]
