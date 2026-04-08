@@ -16,6 +16,7 @@ import Nginx from '../../assets/img/skills/Nginx.webp'
 import Spring from '../../assets/img/skills/Spring.webp'
 import SQLite from '../../assets/img/skills/SQLite.png'
 import Python from '../../assets/img/skills/Python.webp'
+import GraphQL from '../../assets/img/skills/GraphQL.png'
 import Mongodb from '../../assets/img/skills/Mongodb.webp'
 import Socketio from '../../assets/img/skills/Socketio.webp'
 import PrismaORM from '../../assets/img/skills/PrismaORM.webp'
@@ -154,5 +155,9 @@ export const tech = {
   GithubActions: {
     name: 'Github Actions',
     icon: GithubActions,
+  },
+  GraphQL: {
+    name: 'GraphQL',
+    icon: GraphQL,
   },
 }

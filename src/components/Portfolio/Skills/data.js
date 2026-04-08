@@ -29,6 +29,7 @@ export const MySkills = [
       'Spring',
       'PrismaORM',
       'SocketIo',
+      'GraphQL'
     ],
   },
   {
