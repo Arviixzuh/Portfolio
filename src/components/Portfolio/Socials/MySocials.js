@@ -5,12 +5,12 @@ import youtube from '../../../assets/img/socials/youtube.png'
 import instagram from '../../../assets/img/socials/instagram.png'
 
 export const MySocials = [
-  {
+  /* {
     name: 'Twitter',
     link: 'https://twitter.com/Arviixzuh_',
     icon: twitter,
     color: '#03a9f4',
-  },
+  }, */
   {
     name: 'Github',
     link: 'https://github.com/Arviixzuh',
@@ -22,7 +22,7 @@ export const MySocials = [
     icon: linkedin,
     color: '#0075b2',
   },
-  {
+  /* {
     name: 'Youtube',
     link: 'https://www.youtube.com/channel/UCSAafU0GMeeVK_wcmyrWAMg',
     icon: youtube,
@@ -33,5 +33,5 @@ export const MySocials = [
     link: 'https://www.instagram.com/arviixzuh/',
     icon: instagram,
     color: '#d43f92',
-  },
+  }, */
 ]
