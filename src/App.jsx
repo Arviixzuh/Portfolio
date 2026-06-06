@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Portfolio } from './pages/Portfolio'
 import ProjectPage from './pages/Project'
 import './styles/main.scss'
@@ -11,6 +11,7 @@ const App = () => {
     <div className='portfolioContent'>
       <Routes>
         <Route path='/' element={<Portfolio />} />
+        <Route path='*' element={<Navigate to='/' />} />
         <Route path='/project/:id' element={<ProjectPage />} />
       </Routes>
     </div>
