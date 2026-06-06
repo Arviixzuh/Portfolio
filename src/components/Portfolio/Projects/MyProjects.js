@@ -171,7 +171,7 @@ export const MyPinnedProjects = [
       DetailPlumbing15,
     ],
     description: {
-      en: 'ERP platform tailored for architecture firms to perform precise estimations directly on PDF blueprints, improving collaboration and budgeting accuracy.',
+      en: 'ERP platform designed to generate accurate estimates and work directly on PDF blueprints, streamlining budgeting and collaboration workflows.',
       es: 'Plataforma ERP para realizar estimaciones precisas y trabajar sobre planos PDF, optimizando el flujo de presupuestado y colaboración.',
     },
     shortDescription: {
