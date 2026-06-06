@@ -11,7 +11,7 @@
     padding: 15px;
     user-select: none;
     align-items: center;
-    border-radius: 10px;
+
     transition: all 400ms ease;
     &:hover {
       border: var(--socialCardBorderHover);
@@ -25,6 +25,17 @@
   img {
     height: 20px;
     width: 20px;
+  }
+
+  /* specific class for social icons to allow dark-mode adjustments */
+  img.socialIcon {
+    filter: none;
+    transition: filter 180ms ease, opacity 160ms ease;
+  }
+
+  /* Make github SVG white in dark mode */
+  .dark & img.socialIcon.github {
+    filter: invert(1) brightness(2);
   }
 }
 
@@ -45,4 +56,3 @@
     grid-template-columns: 1fr;
   }
 }
-

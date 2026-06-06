@@ -46,13 +46,12 @@
   cursor: pointer;
   display: flex;
   padding: 6px 14px;
+  font-size: 13px;
   align-items: center;
   user-select: none;
   font-weight: 500;
-  font-size: 13px;
-  border-radius: 8px;
   background-color: var(--resumeButtonBackground);
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
   svg {
     font-size: 20px;
   }

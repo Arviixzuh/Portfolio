@@ -1,8 +1,8 @@
-import twitter from '../../../assets/img/socials/twitter.png'
-import github from '../../../assets/img/socials/github.png'
-import linkedin from '../../../assets/img/socials/linkedin.png'
-import youtube from '../../../assets/img/socials/youtube.png'
-import instagram from '../../../assets/img/socials/instagram.png'
+import twitter from '@/assets/img/socials/twitter.png'
+import github from '@/assets/img/socials/github.svg'
+import linkedin from '@/assets/img/socials/linkedin.png'
+import youtube from '@/assets/img/socials/youtube.png'
+import instagram from '@/assets/img/socials/instagram.png'
 
 export const MySocials = [
   /* {

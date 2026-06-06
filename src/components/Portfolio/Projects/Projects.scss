@@ -13,28 +13,28 @@
 .projectsContentContainer {
   width: 100%;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 12px;
   grid-template-columns: 1fr 1fr;
 }
 
 .projectCardContainer {
-  border: var(--projectCardBorder);
-  padding: 20px;
   display: flex;
-  transition:
-    transform 400ms ease,
-    border 400ms ease;
-  border-radius: 10px;
-  flex-direction: column;
 
+  transition: transform 240ms ease;
+  flex-direction: column;
   &:hover {
-    border: var(--projectCardBorderHover);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 }
 
+.projectThumbnail {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
 .technologiesContainer {
-  gap: 5px;
   display: flex;
 
   img {
@@ -59,26 +59,27 @@
 .pinnedProjectCardContainer {
   gap: 20px;
   display: flex;
-
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease;
   h4 {
     font-size: 20px;
     font-weight: 500;
   }
+}
 
-  a {
-    gap: 10px;
-    color: var(--projectButtonColor);
-    width: fit-content;
-    display: flex;
-    padding: 6px 20px 6px 20px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    align-items: center;
-    border-radius: 8px;
-    justify-content: center;
-    background-color: var(--projectButtonBackground);
-  }
+.projectLinkButton {
+  gap: 10px;
+  color: var(--projectButtonColor);
+  width: fit-content;
+  display: flex;
+  padding: 6px 20px 6px 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--projectButtonBackground);
 }
 
 .pinnedProjectItem {
@@ -109,7 +110,129 @@
   height: 100%;
   object-fit: cover;
   user-select: none;
-  border-radius: 10px;
+  transition: transform 300ms ease;
+  transform-origin: center center;
+}
+
+.pinnedProjectCardContainer:hover {
+  transform: translateY(-5px);
+}
+
+/* Modal styles */
+.projectModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.projectModal {
+  width: min(1000px, 95%);
+  max-height: 90vh;
+  background: var(--background);
+  padding: 20px;
+  overflow: auto;
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modalContent {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.modalGallery {
+  flex: 1.1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalMainImage {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+.galleryNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.galleryNav.left {
+  left: 6px;
+}
+.galleryNav.right {
+  right: 6px;
+}
+
+.galleryThumbs {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.galleryThumbs .thumb {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.galleryThumbs .thumb.active {
+  transform: scale(1.03);
+  opacity: 1;
+  /* no shadows */
+}
+
+.modalInfo {
+  flex: 0.9;
+}
+
+.modalTechnologies {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.modalTechnologies img {
+  width: 28px;
+  height: 28px;
+}
+
+.modalLinks {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 @media (max-width: 720px) {
@@ -132,4 +255,19 @@
   .projectsContentContainer {
     grid-template-columns: 1fr;
   }
+
+  .modalContent {
+    flex-direction: column;
+  }
+}
+
+/* Short description visual clamp (two lines) */
+.pinnedProjectItem p,
+.projectCardContainer p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.25rem 0 0 0;
 }

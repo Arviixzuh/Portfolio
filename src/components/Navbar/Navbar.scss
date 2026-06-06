@@ -1,5 +1,9 @@
 .changeThemeIcon {
   cursor: pointer;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   svg {
     color: var(--iconColor);
     font-size: 20px;
@@ -13,7 +17,7 @@
   z-index: 10;
   padding: 0 20px;
   position: sticky;
-  max-width: 700px;
+  max-width: 900px;
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(45px);
@@ -23,9 +27,16 @@
     width: 30px;
     height: 30px;
     object-fit: cover;
-    box-shadow: var(--avatarShadow);
+    box-shadow: none;
     border-radius: 100%;
   }
+}
+
+.navbarButtonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
 .navbarProfileContainer {
@@ -38,3 +49,17 @@
     font-size: 20px;
   }
 }
+
+.changeLang {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 6px 10px;
+  min-height: 40px;
+  min-width: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--titles);
+}
+
+.light .changeLang { border-color: rgba(0,0,0,0.08); }
+.dark .changeLang { border-color: rgba(255,255,255,0.06); color: var(--titles); }

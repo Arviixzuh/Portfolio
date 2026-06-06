@@ -1,51 +1,71 @@
 .light {
-  --line: 2px solid #cbcfd5;
+  --line: 1px solid #cbcfd5;
   --texts: #334155;
   --titles: #1c2738;
-  --subTitles: #818cf8;
+  --subTitles: #272727;
   --iconColor: #818181;
   --background: #ffffff;
   --avatarShadow: 0 14px 18px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
-  --avatarBorder: 6px solid rgb(255, 255, 255);
+  --avatarBorder: 4px solid rgb(255, 255, 255);
   --mailBackground: rgb(240, 240, 240);
   --socialCardBorder: 1px solid #f0f0f0;
   --navBarBackground: rgb(255, 255, 255, 0.637);
   --emailCopiedColor: rgb(79, 131, 79);
-  --scrollBackground: rgb(100, 103, 241);
-  --bioSkillTextColor: rgb(100, 103, 241);
-  --resumeButtonColor: rgb(100, 103, 241);
+  --scrollBackground: rgb(44, 44, 46);
+  --bioSkillTextColor: rgb(48, 48, 48);
+  --resumeButtonColor: rgb(211, 211, 211);
   --projectCardBorder: 1px solid #eeeeee;
   --projectButtonColor: #ffffff;
+  --card: #f1f1f1;
   --socialCardBorderHover: 1px solid #d4d3d3;
-  --scrollBackgroundHover: rgb(123, 125, 255);
+  --scrollBackgroundHover: rgb(63, 63, 63);
   --emailCopiedBackground: rgb(176, 255, 176);
   --projectCardBorderHover: 1px solid #d3d3d3;
-  --resumeButtonBackground: rgb(220, 227, 250);
-  --projectButtonBackground: rgb(15, 23, 42);
+  --resumeButtonBackground: rgb(5, 5, 5);
+  --projectButtonBackground: rgb(5, 5, 5);
+  --complementary: #0e0e0e;
 }
 
 .dark {
-  --line: 2px solid #424a57;
-  --texts: #dddddd;
-  --titles: #f1f5f9;
-  --subTitles: #ffffff;
-  --iconColor: #f1f5f9;
-  --background: rgb(12, 16, 20);
-  --avatarShadow: 0;
-  --avatarBorder: 6px solid rgb(18, 24, 31);
-  --mailBackground: rgb(18, 24, 31);
-  --navBarBackground: rgba(12, 16, 20, 0.478);
-  --scrollBackground: #343a42;
-  --socialCardBorder: 1px solid #2c3643;
-  --emailCopiedColor: rgb(67, 102, 67);
-  --bioSkillTextColor: #c2d9ff;
-  --resumeButtonColor: rgb(255, 255, 255);
-  --projectCardBorder: 1px solid #374151;
-  --projectButtonColor: rgb(15, 17, 27);
-  --socialCardBorderHover: 1px solid #354150;
-  --scrollBackgroundHover: #3f4650;
-  --projectCardBorderHover: 1px solid #4d5a6e;
-  --emailCopiedBackground: rgb(120, 233, 120);
-  --resumeButtonBackground: rgb(33, 35, 40);
-  --projectButtonBackground: #ffffff;
+  --complementary: #fcfcfc;
+  /* Fondos (Gris grafito ultra profundo y elegante) */
+  --background: #0b0b0c; /* Off-black muy oscuro */
+  --navBarBackground: rgba(11, 11, 12, 0.75); /* Fluido con el fondo */
+  --mailBackground: #121214; /* Un paso arriba para dar volumen a las tarjetas */
+
+  /* Bordes y Líneas (Sutiles y limpios) */
+  --line: 1px solid rgba(255, 255, 255, 0.06);
+  --socialCardBorder: 1px solid rgba(255, 255, 255, 0.05);
+  --socialCardBorderHover: 1px solid rgba(255, 255, 255, 0.12);
+  --projectCardBorder: 1px solid rgba(255, 255, 255, 0.05);
+  --projectCardBorderHover: 1px solid rgba(255, 255, 255, 0.12);
+
+  /* Tipografía (Contraste suave para evitar fatiga) */
+  --titles: #f3f4f6; /* Gris muy claro, menos agresivo que el blanco puro */
+  --subTitles: #e5e7eb;
+  --texts: #9ca3af; /* Gris medio elegante */
+  --bioSkillTextColor: #e5e7eb; /* Integrado en la paleta minimalista */
+  --iconColor: #d1d5db;
+
+  /* Avatar */
+  --avatarBorder: 4px solid #1c1c1f;
+  --avatarShadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  --card: #111113;
+
+  /* Scrollbar */
+  --scrollBackground: rgba(255, 255, 255, 0.06);
+  --scrollBackgroundHover: rgba(255, 255, 255, 0.15);
+
+  /* Botón de Resume */
+  --resumeButtonColor: #0e0e0e;
+  --resumeButtonBackground: #ffffff;
+
+  /* Botones de Proyectos (Contraste invertido refinado) */
+  --projectButtonColor: #0b0b0c;
+  --projectButtonBackground: #f3f4f6;
+
+  /* Feedback de Email Copiado (Un verde oliva/esmeralda muy sutil y quemado) */
+  --emailCopiedColor: #34d399; /* Esmeralda suave */
+  --emailCopiedBackground: rgba(52, 211, 153, 0.08); /* Apenas un toque de color */
 }
