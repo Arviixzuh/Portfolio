@@ -24,15 +24,26 @@ const ProjectPage = () => {
   const project = all.find((p) => p.id === id || slugify(p.name) === id)
   const [lightboxOpen, setLightboxOpen] = React.useState(false)
   const [lightboxIndex, setLightboxIndex] = React.useState(0)
+  const [isClosing, setIsClosing] = React.useState(false)
+  const CLOSE_ANIM_DURATION = 260
 
   const openLightbox = (i) => {
+    if (isClosing) return
     setLightboxIndex(i)
+    setIsClosing(false)
     setLightboxOpen(true)
   }
-  const closeLightbox = () => setLightboxOpen(false)
+  const closeLightbox = (e) => {
+    e && e.stopPropagation && e.stopPropagation()
+    setIsClosing(true)
+    setTimeout(() => {
+      setIsClosing(false)
+      setLightboxOpen(false)
+    }, CLOSE_ANIM_DURATION)
+  }
 
   React.useEffect(() => {
-    if (!lightboxOpen) return
+    if (!lightboxOpen && !isClosing) return
     const onKey = (e) => {
       if (e.key === 'Escape') return closeLightbox()
       if (e.key === 'ArrowRight') return setLightboxIndex((i) => (i + 1) % images.length)
@@ -41,7 +52,7 @@ const ProjectPage = () => {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [lightboxOpen])
+  }, [lightboxOpen, isClosing])
 
   React.useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' })
@@ -59,19 +70,13 @@ const ProjectPage = () => {
         : []
   const others = all.filter((p) => p.id !== project.id)
 
-  const getShort = (p) =>
-    (p.shortDescription && (p.shortDescription[lang] || p.shortDescription.en)) ||
-    (p.description && (p.description[lang] || p.description.en)) ||
-    p.description ||
-    ''
-
   const prevLightbox = (e) => {
-    e && e.stopPropagation()
+    e.stopPropagation()
     setLightboxIndex((i) => (i - 1 + images.length) % images.length)
   }
 
   const nextLightbox = (e) => {
-    e && e.stopPropagation()
+    e.stopPropagation()
     setLightboxIndex((i) => (i + 1) % images.length)
   }
 
@@ -161,8 +166,11 @@ const ProjectPage = () => {
                 <img key={i} src={img} alt={`gallery-${i}`} onClick={() => openLightbox(i)} />
               ))}
             </div>
-            {lightboxOpen && (
-              <div className='lightboxOverlay' onClick={closeLightbox}>
+            {(lightboxOpen || isClosing) && (
+              <div
+                className={`lightboxOverlay ${isClosing ? 'closing' : ''}`}
+                onClick={closeLightbox}
+              >
                 <button className='lightboxClose' onClick={closeLightbox} aria-label='Cerrar'>
                   <BiX />
                 </button>
@@ -172,7 +180,7 @@ const ProjectPage = () => {
                   </button>
                   <img
                     src={images[lightboxIndex]}
-                    className='lightboxImg'
+                    className={`lightboxImg ${isClosing ? 'closing' : ''}`}
                     alt={`lightbox-${lightboxIndex}`}
                   />
                   <button
