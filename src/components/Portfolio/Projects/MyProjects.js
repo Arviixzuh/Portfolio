@@ -102,7 +102,7 @@ export const MyPinnedProjects = [
     ],
     description: {
       en: 'Desktop and web application for business management providing control over inventory, warehouses, suppliers and customers, with integrated invoicing and multi-branch support.',
-      es: 'Aplicación de escritorio y web para la gestión empresarial que ofrece control sobre inventario, almacenes, proveedores y clientes, facturación integrada con AFIP y soporte multi-sucursal.',
+      es: 'Aplicación de escritorio y web para la gestión empresarial que ofrece control sobre inventario, almacenes, proveedores y clientes, facturación integrada con ARCA y soporte multi-sucursal.',
     },
     shortDescription: {
       en: 'Desktop and web ERP for inventory, sales and electronic invoices.',
